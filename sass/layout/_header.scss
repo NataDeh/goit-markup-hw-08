@@ -1,0 +1,106 @@
+.header{
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.header__container{
+    display: flex;
+}
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+}
+.site-nav__item{
+    font-family: Roboto;
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.header-contacts-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.site-nav__link{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-title-color);
+    transition: color 250ms var(--timing-function);
+    &.site-nav-link__current::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-hover-color);
+        opacity: 1;
+        transition: color 250ms var(--timing-function);
+    }
+    &:hover,
+    &:focus{
+        color: var(--accent-hover-color);
+    }
+}
+
+.site-nav-link__current{
+    display: block;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-hover-color);
+    transition: color 250ms var(--timing-function);
+}
+
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+.contacts__link{
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;  
+    color: var(--main-text-color);
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+        color: var(--accent-hover-color);
+    } 
+}
+
+.contacts__item:not(:last-child){
+    display: block;
+    margin-right: 50px;
+}
+
+.contacts-link__icon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    fill: currentColor;
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        background-size: contain;
+    }
+}

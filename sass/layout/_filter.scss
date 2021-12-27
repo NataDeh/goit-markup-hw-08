@@ -1,0 +1,43 @@
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-list__item{
+    height: 38px;
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+
+.filter-list-oll__button{
+    box-sizing: border-box;
+    font-family:inherit;
+    min-width: 73px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    background-color: var(--accent-color);
+    color: var(--main-title-color);
+    transition-property: color, box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+.filter-list__button{
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    color: rgba(33, 33, 33, 1);
+    transition-property: color, box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+
