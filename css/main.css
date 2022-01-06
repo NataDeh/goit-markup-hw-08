@@ -529,7 +529,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts {
     display: block;
     margin-left: auto;
@@ -574,7 +574,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts__item + .contacts__item {
     margin-top: 10px;
   }
