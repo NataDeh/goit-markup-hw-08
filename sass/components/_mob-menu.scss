@@ -1,0 +1,109 @@
+.mob-menu{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: auto;
+    min-width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+        .mob-menu__container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+    transform: translateX(100%);
+    transition: transform 250ms var(--timing-function);
+}
+
+.close-menu-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+    padding-top: 10px;
+    border: none;
+    background-color: #fff;
+    fill: var(--secondary-title-color);
+    transition: fill 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+        fill: var(--accent-hover-color);
+    }
+    
+}
+
+.mob-menu__item + .mob-menu__item{
+    margin-top: 32px;
+}
+
+.mob-menu__link{
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--secondary-title-color);
+    &:hover,
+    &:focus{
+        color: var(--accent-hover-color);   
+    }
+}
+
+// .mob-menu__link-current{
+//     color: var(--accent-hover-color);
+// }
+
+.mob-menu-contacts__item{
+    display: block;
+    & + &{
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+}
+
+.mob-menu-contacts__tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-hover-color);
+    padding-bottom: 32px;
+    }
+
+.mob-menu-contacts__male{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+
+    }
+
+.social-mob{
+    display: flex;
+    
+}
+
+.social-mob__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-hover-color)
+}
+
+.vertical-line{
+    box-sizing: border-box;
+    width: 22px;
+    height: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 0;
+}
