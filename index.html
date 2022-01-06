@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw-7</title>
+    <title>hw-8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,9 +45,61 @@
                         <use href="./images/sprite.svg#icon-phone"></use></svg>
                             +38 096 111 11 11</a></li>
                 </ul>
+                <button type="button" class="open-menu-btn">
+                    <svg class="mobil__icon-open" width="24" height="16">
+                        <use href="./images/sprite.svg#icon-mob-open"></use>
+                    </svg>
+                </button>
+            <div class="mob-menu">
+                <div class="container">
+                    <div class="mob-menu-top">
+                    <button type="button" class="close-menu-btn">
+                        <svg class="mob-menu__icon-close" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-mob-close"></use>
+                        </svg>
+                    </button>
+                        <ul class="mob-menu__list">
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="./index.html">Студия</a></li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link site-nav-link__current" href="./portfolio.html">Портфолио</a></li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contacts">
+                            <li class="mob-menu-contacts__item">
+                                <a href="tel:+380961111111" class="mob-menu-contacts__tel">
+                                    +38 096 111 11 11</a>
+                                </li>
+                            <li class="mob-menu-contacts__item">
+                                    <a href="info@devstudio.com" class="mob-menu-contacts__male">
+                                        info@devstudio.com</a>
+                                    </li>
+                                
+                        </ul>
+                        <ul class="social-mob">
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Instagram</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Twitter</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">Facebook</a>
+                            </li>
+                            <li class="social-mob__item">
+                                <a href="" class="social-mob__link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
         </div>      
     </header>
-    <main>
+    <!-- <main> -->
         <!-- Hero -->
         <section class="hero">
             <div class="container">
@@ -105,7 +157,7 @@
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list__item">
-                        <img src="./images/sec-3/box-1.jpg" alt="Програмирование"
+                        <img src="./images/work/box-1.jpg" alt="Програмирование"
                         width="370"
                         height="294"/>
                         <div class="work-list__text-board">
@@ -113,7 +165,7 @@
                         </div>
                     </li>
                     <li class="work-list__item">
-                        <img src="./images/sec-3/box-2.jpg" alt="Синхронизация"
+                        <img src="./images/work/box-2.jpg" alt="Синхронизация"
                         width="370"
                         height="294"/>
                         <div class="work-list__text-board">
@@ -121,7 +173,7 @@
                         </div>
                     </li>
                     <li class="work-list__item">
-                        <img src="./images/sec-3/box-3.jpg" alt="Дизайн"
+                        <img src="./images/work/box-3.jpg" alt="Дизайн"
                         width="370"
                         height="294"/>
                         <div class="work-list__text-board">
@@ -138,7 +190,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/sec-4/product-designer.jpg" alt="Игорь Демьяненко"
+                        <img src="./images/team/product-designer.jpg" alt="Игорь Демьяненко"
                         width="270"
                         height="260"/>
                         <div class="team-list__wrapper">
@@ -177,7 +229,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/sec-4/frontend-developer.jpg" alt="Ольга Репина"
+                        <img src="./images/team/frontend-developer.jpg" alt="Ольга Репина"
                         width="270"
                         height="260"/>
                         <div class="team-list__wrapper">
@@ -216,7 +268,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/sec-4/marketing.jpg" alt="Николай Тарасов"
+                        <img src="./images/team/marketing.jpg" alt="Николай Тарасов"
                         width="270"
                         height="260"/>
                         <div class="team-list__wrapper">
@@ -255,7 +307,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/sec-4/ui-designer.jpg" alt="Михаил Ермаков"
+                        <img src="./images/team/ui-designer.jpg" alt="Михаил Ермаков"
                         width="270"
                         height="260"/>
                         <div class="team-list__wrapper">
@@ -346,9 +398,9 @@
                 </ul>
             </div>
         </section>
-    </main>
+    <!-- </main> -->
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer-firstblock">
             <a href="logo" class="logo">
@@ -418,7 +470,7 @@
                 </form>
         </div>  
     </div>
-    </footer>
+    </footer> -->
 <!---------- MODAL ------------------------------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -494,6 +546,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

@@ -1,13 +1,20 @@
 .filter-list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-bottom: -15px;
+    margin-right: -8px;
+    @media screen and (min-width: 768px){
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 .filter-list__item{
     height: 38px;
-    &:not(:last-child){
-        margin-right: 8px;
-    }
+    margin-right: 8px;
+    margin-bottom: 15px;
+    
 }
 
 .filter-list-oll__button{
