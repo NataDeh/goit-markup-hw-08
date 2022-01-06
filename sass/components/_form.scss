@@ -1,11 +1,15 @@
 .modal-title{
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--secondary-title-color);
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px){
+        line-height: 1.15;
+        
+    }
 }
 
 .modal-form__field{
@@ -15,8 +19,11 @@
 .modal-form__text{
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
+    @media screen and (min-width: 1200px){
+        letter-spacing: 0.01em;
+    }
 }
 
 .input-wrap{
@@ -67,8 +74,8 @@
 
 
 .check__text{
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     display: flex;
@@ -76,6 +83,11 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
 }
 
 .check__item{

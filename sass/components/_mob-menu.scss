@@ -18,7 +18,7 @@
         justify-content: space-between;
         overflow: scroll;
     }
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: transform 250ms var(--timing-function);
 }
 
@@ -55,10 +55,6 @@
     }
 }
 
-// .mob-menu__link-current{
-//     color: var(--accent-hover-color);
-// }
-
 .mob-menu-contacts__item{
     display: block;
     & + &{
@@ -87,22 +83,28 @@
 
 .social-mob{
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
+// .social-mob__item + .social-mob__item{
+//     margin-right: 10px;
+    
+// }
 .social-mob__link{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--accent-hover-color)
+    color: var(--accent-hover-color);
 }
 
 .vertical-line{
     box-sizing: border-box;
     width: 22px;
     height: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
     margin: 0;
     padding: 0;
