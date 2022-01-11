@@ -9,16 +9,13 @@
 
 .footer-container{
     display: block;
-    align-items: baseline;
+    
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
-        padding-left: 76px;
-        padding-right: 89px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     @media screen and (min-width: 1200px){
-        display: flex;
         align-items: baseline;
         flex-wrap: nowrap;
         padding-left: 0;
@@ -27,19 +24,21 @@
 }
 
 .footer-firstblock{
-    padding-bottom: 60px;
-    // justify-content: center;
-    padding-left: auto;
-    padding-right: auto;
+    @media screen and (max-width: 1199px){
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 1200px){
         flex-grow: 1;
     }
 }
 
 .logo-footer{
+    justify-content: center;
     @media screen and (max-width: 1199px){
+        margin-right: -88px;
         display: block;
-    text-align: center;
+        text-align: center;
+        justify-content: center;
     }
     
 }
@@ -87,7 +86,7 @@
 /* -------- ПРИСОЕДИНЯЙТЕСЬ --------- */
 
 .join{
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     @media screen and (min-width: 1200px){
         margin-left: 70px;
     }
@@ -145,7 +144,8 @@
 .subscribe-form{
     @media screen and (min-width: 768px){
         // justify-content: center;
-        padding-left: 90px;
+        // padding-left: 90px;
+        
     }
     @media screen and (min-width: 1200px){
         margin-left: 93px;

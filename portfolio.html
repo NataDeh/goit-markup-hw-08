@@ -45,6 +45,68 @@
                     <use href="./images/sprite.svg#icon-phone"></use></svg>
                         +38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="open-menu-btn">
+                <svg class="mobil__icon-open" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-mob-open"></use>
+                </svg>
+            </button>
+        <div class="mob-menu is-hidden">
+            <div class="mob-menu__container">
+                <div class="mob-menu-top">
+                <button type="button" class="close-menu-btn">
+                    <svg class="mob-menu__icon-close" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-mob-close"></use>
+                    </svg>
+                </button>
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link mob-menu__link-current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contacts">
+                        <li class="mob-menu-contacts__item">
+                            <a href="tel:+380961111111" class="mob-menu-contacts__tel">
+                                +38 096 111 11 11</a>
+                            </li>
+                        <li class="mob-menu-contacts__item">
+                                <a href="info@devstudio.com" class="mob-menu-contacts__male">
+                                    info@devstudio.com</a>
+                                </li>
+                            
+                    </ul>
+                    <ul class="social-mob">
+                        <li class="social-mob__item">
+                            <a href="" class="social-mob__link">Instagram
+                                <div class="vertical-line"></div>
+                            </a>
+                        </li>
+                        <li class="social-mob__item">
+                            <a href="" class="social-mob__link">Twitter
+                                <div class="vertical-line"></div>
+                            </a>
+                        </li>
+                        <li class="social-mob__item">
+                            <a href="" class="social-mob__link">Facebook
+                                <div class="vertical-line"></div>
+                            </a>
+                        </li>
+                        <li class="social-mob__item">
+                            <a href="" class="social-mob__link">
+                                <svg class="social-mob__icon"
+                                width="1" 
+                                height="22">
+                                <use href="./images/sprite.svg#icon-line"></use></svg>
+                                LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         </div>
     </header>
@@ -388,7 +450,7 @@
                     <div class="subscribe">
                     <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
                     <div class="subscribe__wrapper">
-                        <input type="subscribe" name="subscribe" class="subscribe__input" placeholder="E-mail">
+                        <input type="email" name="subscribe-email" class="subscribe__input" placeholder="E-mail">
                             
                         <button type="submit" class="btn subscribe__btn" >Подписаться
                             <svg class="subscribe__icon" width="24" height="24">
@@ -399,8 +461,8 @@
                     </div>
                 </form>
         </div>  
-    </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 

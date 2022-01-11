@@ -55,6 +55,10 @@
     }
 }
 
+.mob-menu__link-current{
+    color: var(--accent-hover-color);
+}
+
 .mob-menu-contacts__item{
     display: block;
     & + &{
@@ -86,10 +90,6 @@
     flex-wrap: wrap;
 }
 
-// .social-mob__item + .social-mob__item{
-//     margin-right: 10px;
-    
-// }
 .social-mob__link{
     display: flex;
     align-items: center;
