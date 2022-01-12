@@ -1,10 +1,15 @@
 .footer{
-    display: flex;
-    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px){
+        align-items: baseline;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
 }
 
 .footer-container{
@@ -18,8 +23,6 @@
     @media screen and (min-width: 1200px){
         align-items: baseline;
         flex-wrap: nowrap;
-        padding-left: 0;
-        padding-right: 0;
     }
 }
 
@@ -32,16 +35,7 @@
     }
 }
 
-.logo-footer{
-    justify-content: center;
-    @media screen and (max-width: 1199px){
-        margin-right: -88px;
-        display: block;
-        text-align: center;
-        justify-content: center;
-    }
-    
-}
+
 
 .contacts-footer__link{
     font-weight: 400;
@@ -51,7 +45,7 @@
     &:first-child{
         color: var(--main-title-color);
     }
-    &:nth-child(n+1){
+    &:nth-child(1){
         color: rgba(255, 255, 255, 0.6);
     }
     transition: color 250ms var(--timing-function);
@@ -143,9 +137,7 @@
 
 .subscribe-form{
     @media screen and (min-width: 768px){
-        // justify-content: center;
-        // padding-left: 90px;
-        
+        width: 450px;
     }
     @media screen and (min-width: 1200px){
         margin-left: 93px;
@@ -188,20 +180,21 @@
 }
 
 .subscribe__input{
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 320px){
         margin-bottom: 20px;
     }
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    resize: none;
     padding-left: 10px;
     padding-right: 10px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.3);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     outline: none;
     transition: border-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
