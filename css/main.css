@@ -351,7 +351,7 @@ img {
   display: inline-block;
   color: var(--accent-color);
   margin-left: 5px;
-  border-bottom: 1px solid var(--accent-color);
+  text-decoration: underline;
 }
 
 .modal-btn {
@@ -1082,19 +1082,16 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms var(--timing-function);
-}
-
-.contacts-footer__link:first-child {
-  color: var(--main-title-color);
-}
-
-.contacts-footer__link:nth-child(1) {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
 }
 
 .contacts-footer__link:hover, .contacts-footer__link:focus {
   color: var(--accent-hover-color);
+}
+
+.contacts-footer__link-color {
+  color: var(--main-title-color);
 }
 
 .logo-light {
@@ -1184,7 +1181,7 @@ img {
 }
 
 /* ------ПОДПИШИСЬ---------------- */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
     width: 450px;
   }

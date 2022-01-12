@@ -42,17 +42,15 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    &:first-child{
-        color: var(--main-title-color);
-    }
-    &:nth-child(1){
-        color: rgba(255, 255, 255, 0.6);
-    }
+    color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--timing-function);
     &:hover,
     &:focus{
     color: var(--accent-hover-color);
     }
+}
+.contacts-footer__link-color{
+    color: var(--main-title-color);
 }
 
 .logo-light{
@@ -136,7 +134,7 @@
 /* ------ПОДПИШИСЬ---------------- */
 
 .subscribe-form{
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         width: 450px;
     }
     @media screen and (min-width: 1200px){
